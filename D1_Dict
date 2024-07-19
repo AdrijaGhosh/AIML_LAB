@@ -1,0 +1,10 @@
+dict={2:'adrija',1:'shyantan',4:'ghosh',3:'kundu'}
+keys=list(dict.keys())
+keys.sort()
+sorted_dict={i:dict[i] for  i in keys}
+print(sorted_dict)
+
+
+
+
+
