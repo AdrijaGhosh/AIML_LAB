@@ -1,0 +1,18 @@
+arr=[1,2,3,4,5,6,7]
+value=int(input('enter a number'))
+low=0
+f=-1
+high=len(arr)-1
+while(low<=high):
+    mid=(low+high)//2
+    if(arr[mid]==value):
+        f=mid
+        break
+    elif(value>arr[mid]):
+        low=mid+1
+    else:
+        high=mid-1
+if(f!=-1):
+    print('Value found at ',f)
+else:
+    print('Value not found')
